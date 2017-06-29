@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>加号科技</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="icon" href="images/client_logo.png" type="image/x-icon"/>
+    <script src="js/jquery-1.6.2.min.js"></script>
+    <script src="js/flexible.debug.js"></script>
+    <script src="js/flexible_css.debug.js"></script>
+    <script src="js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="http://www.w3cways.com/demo/LazyLoad/js/jquery.lazyload.js"></script>
+    <script rel="stylesheet" src="js/zepto.min.js"></script>
+    <script rel="stylesheet" src="js/zepto.selector.js"></script>
+    <script rel="stylesheet" src="js/zepto.fx.js"></script>
+    <script rel="stylesheet" src="js/zepto.touch.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="nav">
+            <div class="nav-logo">
+                <img src="images/new-plus-logo.png" class="img-logo">
+            </div>
+            <div id="mp-intro-wrapper" class="nav-wrapper vesibility">
+                <div  class="swiper-wrapper">
+                    <div class="flex-col-center swiper-slide">
+                        <img src="images/nav-2.png" onclick="watchPlusTechVideo()" class="img-stp-1">
+                        <p class="ftsize18 mt-25">帮助诚信的中小企业</p>
+                        <p class="ftsize18">更好的<strong>生存和发展</strong></p>
+                    </div>
+                    <div class="flex-col-center swiper-slide">
+                        <img src="images/nav-1.png" class="img-stp-2">
+                        <p class="ftsize18"><strong>大管加</strong>ERPlus</p>
+                        <p class="ftsize18">手机上最好用的企业管理系统</strong></p>
+                    </div>
+                    <div class="flex-col-center swiper-slide">
+                        <img src="images/nav-3.png" class="img-stp-3">
+                        <p class="ftsize18 mt-9"><strong>加号财富</strong></p>
+                        <p class="ftsize18">让借贷更有意义</strong></p>
+                    </div>
+                </div>
+                <div class="pagination">&nbsp;</div>
+            </div>
+        </header>
+        <!-- 加号科技简介栏 -->
+        <section class="pro">
+            <h1 class="mb-22">加号科技</h1>
+            <ul class="ftsize16">
+                <li>加号科技，2014年成立于深圳，是专注企业服务的创新型科技公司为中小企业量身定制的移动办公SaaS服务“大管加”帮助企业管理者通过前所未有的方式大幅度提升执行能力，降低成本，也让优秀员工不再被埋没。</li>
+                <li class="mt-24">纯线上的供应金融平台“加号财富”致力于为诚信的中小企业解决融资难题，通过自主研发的大数据Deep Learning风控工具“Protoss”，让企业更便捷且低成本的获得资金。</li>
+                <li class="mt-24">加号，也许还未改变世界，但我们正在改变中小企业的管理方式和融资环境。</li>
+            </ul>
+            <img src="images/img_17.png" class="img-pic-1 mt-24">
+        </section>
+        <!-- 使命与价值观栏 -->
+        <section class="pro">
+            <h1 class="mb-22">使命、愿景与价值观</h1>
+            <div>
+                <h3 class="mb-22 ftsize18">加号使命</h3>
+                <img src="images/img_10.png" class="img-pic-2">
+                <h5 class="ftsize15 mt-12">帮助诚信的中小企业更好地生存和发展</h5>
+            </div>
+            <div class="mt-40">
+                <h3 class="mb-22 ftsize18">加号愿景</h3>
+                <img src="images/img_01.png" class="img-pic-2">
+                <h5 class="ftsize15 mt-12">成为最具价值、最受尊敬、最适宜工作的科技型企业服务公司</h5>
+            </div>
+            <div class="mt-40">
+                <h3 class="mb-22 ftsize18">加号价值观</h3>
+                <img src="images/img_04.png" class="img-pic-3">
+                <h5 class="ftsize15 mt-12">诚信、付出、创新、执行</h5>
+            </div>
+        </section>
+        <footer>
+            <div class="foot-box">
+                <h1>联系我们</h1>
+                <ul class="mt-18">
+                    <li class="mt-18">
+                        <span class="foot-title ftsize13">客户服务</span>&nbsp&nbsp&nbsp
+                        <span class="ftsize13">0755-82777607&nbsp&nbspsupport@erplus.co</span>
+                    </li>
+                    <li class="mt-14">
+                        <span class="foot-title ftsize13">人才招聘</span>&nbsp&nbsp&nbsp
+                        <span class="ftsize13">hr@erplus.co</span>
+                    </li>
+                    <li class="mt-14">
+                        <span class="foot-title ftsize13">公司地址</span>&nbsp&nbsp&nbsp
+                        <span class="ftsize13">深圳市福田区京基滨河时代大厦A座9楼</span>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+    var mpIntroSwiper = new Swiper('#mp-intro-wrapper',{
+        autoplay: 5000,
+        pagination : '.pagination',
+        paginationClickable :true,
+        followFinger : false,
+        loop:true,
+        autoplayDisableOnInteraction : false
+    });
+    var ua = navigator.userAgent.toLowerCase();
+    function watchPlusTechVideo(){
+        if (/iphone|ipad|ipod/.test(ua)) {
+            window.location.href="http://erplus.co/mp/res/plustechvideo.mp4";
+        } else if (/android/.test(ua)) {
+            window.location.href="https://m.v.qq.com/page/s/1/f/s0301btfa1f.html";
+        }
+    }
+    window.setTimeout(function () {
+        $('#mp-intro-wrapper').removeClass('vesibility');
+    },400);
+//    $("img").lazyload();
+</script>
